@@ -51,7 +51,7 @@
 
 
                 <section>
-                    <h1>Niri buruz</h1>
+                    <h2>Niri buruz</h2>
 
                     <ul>
                         <li>Mikel Larreategi, Eibar, 1981</li>
@@ -61,9 +61,457 @@
                             Xakelaria, denbora librean :)
                         </li>
                     </ul>
+                    <br/>
+                    <a href="https://twitter.com/erralin">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/erral">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://flickr.com/erral">
+                        <i class="fa fa-flickr"></i>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>Guri buruz - CodeSyntax</h2>
+                    <ul>
+                        <li>Eibarren, 2000 urtetik</li>
+                        <li>Gaur egun 15 langile (jende bila gabiltza)</li>
+                        <li>Guk <i class="fa fa-heart"> </i> python</li>
+                    </ul>
+                    <br />
+                    <a href="https://twitter.com/codesyntax">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/codesyntax">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <aside class="notes">
+                        Hasiera hasieratik python izan da gure garapen eta lan
+                        inguruneetako erabiltzen dugun lengoaia eta tresna.
+
+                        Ia denerako erabiltzen dugu: webguneak egiteko (azkenean
+                        jana ematen diguna), gure barne-lanetarako scriptak,
+                        bezeroen proiektu gehienak, sistema administrazioko lanak,
+                        segurtasun kopiak, ...
+
+                        Gero azalduko ditut egiten ditugun gauza batzuk eta nola
+                        erabiltzen dugun python horretarako.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Zer da python?</h2>
+                    <ul>
+                        <li>
+                            Goi-mailako programazio lengoaia
+                        </li>
+                        <li>
+                            Helburu orokorrekoa
+                        </li>
+                        <li>
+                            Lengoaia interpretatuta
+                        </li>
+                    </ul>
+
+                    <a href="htts://python.org">
+                        <img data-src="img/python-logo.png" border="0"/>
+                    </a>
+
+                    <aside class="notes">
+                        Jada jakingo duzuen arren, python lengoaiaren ezaugarri
+                        formalak hauexek dira:
+
+                        Goi-mailakoa: maila altuko datu-egiturak erabiltzen direlako (zerrendak, hiztegiak, ...), lengoaian bertan defektuz datozen datu-egiturak dira.
+
+                        Helburu orokorrekoa: edozertarako erabili daitekeelako
+
+                        Interpretatuta: ez duelako konpilazio fase bat, interprete batek irakurtzen du kodea eta bertan exekutatzen da. Interprete arruntenaren izena CPython da, baina badaude beste interprete batzuk, hala nola PyPy (python-en idatzitako python interpretea), Jython (Javan idatzitakoa) edo Ironpython (.NET inguruneetarakoa)
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>Ezaugarri batzuk</h2>
+                    <ul>
+                        <li>Irakurgarritasuna</li>
+                        <li>Indentazioa (4 espazio)</li>
+                        <li><i>duck-typing</i></li>
+                        <li>Paradigma anitzekoa
+                            <ul>
+                                <li>Objektuei zuzendutakoa</li>
+                                <li>Inperatiboa</li>
+                                <li>Prozedurala</li>
+                                <li>Funtzionala</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <aside class="notes">
+                        Irakurgarritasuna izan daiteke python-en ezaugarri nagusiena: kode blokeak indentatuta daude eta horrela bereizi behar dira, hemen ez dago puntu komarik edo giltzik. horregatik, bistazo baten ikusi daiteke programaren fluxua.
+
+                        Indentazioa da irakurgarritasuna dakarren ezaugarria. Kode blokeak espazioekin bereizten dira (arau ez idatzi gisa, 4 espazioko indentazioak gomendatzen dira eta ez tabulazioak)
+
+                        Datu-motei dagokienez duck-typing edo "ahate-mota" erabiltzen du python-ek, hau da aldaigai batek "ahate baten antza badu, ahate batek bezala igeri egiten badu eta ahate batek bezala karranka egiten badu, ahate bat da". Horrek esan nahi du, ez dela aldagaien motarik ezarri behar. Java, C edo beste lengoaia batzuetan programatu baduzue, aldagaien mota definitu behar izaten da, Python-en ez, programatzailea "adin nagusikoa" dela suposatzen da eta badakiela zertan dabilen.
+
+                        Programazio-paradigmari dagokionez, denera egokitzen da eta ez zaitu bat erabiltzera derrigortzen. Adibidez Java programa txiki bat egin behar baduzu klase bat definitu behar da, eta bertan objektu publiko bat (public static void main(String args)) programak funtzionatu dezan. Edo Cn ere prozedura edo funtzio baten sartu behar da. Python-ek ez zaitu derrigortzen ezertara, nahi baduzu fitxategi bakarrean idatzi dezakezu programa, edo objektuak sortu eta herentzia erabili, edo programazio funtzionalaren paradigma erabili Haskell edo beste lengoaia batzuetan bezala.
+                    </aside>
+
+                </section>
+
+                <section data-background-color="#000000">
+                    <pre class="stretch" data-trim data-noescape>
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+                    </pre>
+
+                    <aside class="notes">
+                        python-ek berak bere filosofia laburbiltzen duen esaldi multzo bat
+                        dauka. python interprete bat ireki eta "import this" idazten baduzue
+                        hortxe agertuko dira.
+
+                        Agian, esaldi guzti horietatik, bost nabarmenduko dituzte, horietan
+                        esan daiteke dagoela lehen aipatutako irakurgarritasun eta sinpletasuna
+                        laburbiltzen duen guztia
+
+                    </aside>
+
+                </section>
+
+                <section data-background-color="#000000">
+                    <pre class="stretch" data-trim data-noescape>
+>>> import this
+The Zen of Python, by Tim Peters
+
+<mark>Beautiful is better than ugly.</mark>
+<mark>Explicit is better than implicit.</mark>
+<mark>Simple is better than complex.</mark>
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+<mark>Readability counts.</mark>
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+<mark>If the implementation is hard to explain, it's a bad idea.</mark>
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</pre>
+                </section>
+
+                <section>
+                    <h2>Liburutegi estandarra</h2>
+                    <ul>
+                        <li>Defektuz datozen modulu asko</li>
+                        <li>Ez dira "extrak" instalatu behar</li>
+                        <li>Eguneroko lanen %95a betetzen dute</li>
+                    </ul>
+                    <aside class="notes">
+                        python-en liburutegi estandarra da eguneroko lanen zati handi
+                        bat egiteko beharrezko izaten ditugun liburutegi edo moduli
+                        gehigarri gehienak dituena.
+
+                        Inolako estrarik instalatu gabe 300 modulutik gora datoz
+                        instalazio estandarrean
+                    </aside>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>sys / os</dt>
+                        <dd>Fitxategi sistemako eragiketak egiteko</dd>
+                        <dt>datetime</dt>
+                        <dd>datak, orduak eta hauen eragiketak</dd>
+                        <dt>pdb</dt>
+                        <dd>debuggerra</dd>
+                        <dt>urllib/urllib2</dt>
+                        <dd>webguneen htmla lortzeko</dd>
+                        <dt>csv</dt>
+                        <dd>csv fitxategien kudeaketa</dd>
+                    </dl>
+                    <aside class="notes">
+                        Hemen liburutegi estandarrean dauden moduluetako batzuk.
+                        Beste asko ere badaude (kanpo prozesuak exekutatzeko, XML
+                        fitxategiak irakurtzeko, JSON egiturak sortzeko, ...), edo
+                        gure programen testak exekutatzeko unittest esaterako.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Hirugarrenen moduluak</h2>
+                    <ul>
+                        <li><a href="https://pypi.python.org/">https://pypi.python.org/</a></li>
+                        <li>Milaka modulu, ia edozertarako</li>
+                    </ul>
+                    <aside class="notes">
+                        Baina liburutegi estandarrean ez dauden beste milaka liburutegi ere badaude
+                        edozer dela ere egitea nahi duguna, pypi horretan aurkitu ditzakegu
+                    </aside>
+                </section>
+
+                <section>
+                    <dl>
+                        <dt>requests</dt>
+                        <dd><i>urllib for humans</i></dd>
+                        <dt>PIL / Pillow</dt>
+                        <dd>irudien kudeaketa</dd>
+                        <dt>Beautifulsoup</dt>
+                        <dd>HTMLa parseatzeko</dd>
+                        <dt>xlrd / xlwt</dt>
+                        <dd>Excel fitxategiak irakurri eta idazteko</dd>
+                        <dt>MySQL-python, psycopg, cx_Oracle, sqlite3, pymssql</dt>
+                        <dd>Datu-base erlazionaletara konektatzeko</dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h2>framework-ak</h2>
+                    <ul>
+                        <li><a href="https://djangoproject.org">django</a></li>
+                        <li><a href="http://flask.pocoo.org/">flask</a></li>
+                        <li><a href="https://trypyramid.com/">pyramid</a></li>
+                        <li><a href="https://plone.org">Plone</a></li>
+                        <li><a href="http://www.pygtk.org/">PyGTK</a></li>
+                        <li><a href="https://docs.python.org/2/library/tkinter.html">Tkinter (TCL / TK)</a></li>
+                    </ul>
+                    <aside class="notes">
+                        Liburutegi estandarra eta liburutegi gehigarriak oso erabilgarriak dira
+                        bai script txikiak zein programa handiak egiteko, baina askotan programazio inguruneak
+                        erabiltzen dira, webguneak egiterakoan esaterako, filosofia eta lan egiteko modu berbera
+                        jarraitzen duten liburutegiak integratzen dituztelako.
+
+                        Framework ezberdin asko dago python-en, asko web ingurunera zuzendutakoak, baina ez horretarako
+                        bakarrik. Hemen aipatutakoak muestra txiki bat dira, besterik ez.
+
+                        Mahaigaineko aplikazioak egiteko tresnak ere (PyGTK eta Tkinter) hemen sartu ditut, azkenean
+                        programazio inguruneak ere bai baitira.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Eta guk zer egiten dugu?</h2>
+                    <ul>
+                        <li>Web aplikazioak</li>
+                        <li>Intranetak</li>
+                        <li>Datu-base kudeaketa aplikazioak</li>
+                        <li>Edukiak kudeatzeko sistemak</li>
+                        <li class="fragment">Webguneak</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Eta zer darabilgu guk?</h2>
+
+                    <img data-src="img/plone-logo.png" border="0"/>
+
+                </section>
+                <section>
+                    <h1>Plone</h1>
+                    <ul>
+                        <li>Edukiak kudeatzeko sistema</li>
+                        <li>Webguneak egiteko tresna</li>
+                        <li>GPL lizentzia librea</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h1>Plone</h1>
+                    <ul>
+                        <li>Nabigatzailearen bidez webguneak egiteko tresna</li>
+                        <li>Kudeaketa interfazae nabigatzailean (ez FTP, ez HTML)</li>
+                        <li>+40 hizkuntzatara itzulita</li>
+                        <li>Komunitate aktiboa (konferentziak, sprintak)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img data-src="img/ploneconf.jpeg" alt="" />
+                </section>
+
+                <section>
+                    <img data-src="img/plone5.png" alt="" />
+                </section>
+
+                <section>
+                    <h2>Eta zer darabilgu guk?</h2>
+
+                    <img data-src="img/django-logo-negative.png" border="0"/>
+
+                </section>
+
+                <section>
+                    <h2>Django</h2>
+                    <ul>
+                        <li>Webguneen garapena egiteko ingurune arin eta ahaltsua</li>
+                        <li>Datu-base erlazionalekin integrazioa</li>
+                        <li>Plantilla sistema ahaltsua</li>
+                        <li>Nahi duzuna hasieratik era errazean egiteko bezalakoa</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img data-src="img/django-admin.png" alt="" />
                 </section>
 
 
+                <section>
+                    <h2>Eta zer darabilgu guk?</h2>
+
+                    <img data-src="img/pyramid-medium.png" border="0"/>
+
+                </section>
+
+                <section>
+                    <h2>pyramid</h2>
+                    <ul>
+                        <li>Framework arin-arina</li>
+                        <li>Ez du erabakirik hartzen:
+                            <ul>
+                                <li>Zuk nahi duzun persistentzia/datu-basea</li>
+                                <li>Zuk nahi duzun URL sistema (traveral/pattern)</li>
+                                <li>Zuk nahi duzun plantilla sistema</li>
+                            </ul>
+                        </li>
+                        <li>Azkarra, azkarra, azkarra!!!</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img data-src="img/django-admin.png" alt="" />
+
+                    <aside class="notes">
+                        Guk ia datu-persistentziarik behar ez dugun proiektu batzuetan
+                        erabili dugu, APIak egiteko edo APIetako datuak kontsumitzeko.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>Eta zer darabilgu guk?</h2>
+
+                    <img data-src="img/odoo-logo-200x200.png" border="0"/>
+
+                </section>
+                <section>
+                    <h2>Odoo</h2>
+                    <ul>
+                        <li>ERP bat (lehen OpenERP, TinyERP)</li>
+                        <li>Fakturazioa, kontabilitatea, CRMa, proiektuak, bezeroak, ...</li>
+                    </ul>
+
+                    <aside class="notes">
+                        Oinarri bat ematen dizu eta hortik moduluak gehitzen, kentzen, aldatzen
+                        bezeroaren beharretarako tresna bat garatzen da.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Eta zer darabilgu guk?</h2>
+
+                    <img data-src="img/ansible-1-300x300.png" border="0"/>
+
+                </section>
+                <section>
+                    <h2>Ansible</h2>
+                    <ul>
+                        <li>Informazio sistemen automatizaziorako tresna</li>
+                        <li>Zerbitzariak, lan-inguruneak, aplikazioak instañatzeko inguruneak</li>
+                        <li>+100 zerbitzari ditugu</li>
+                    </ul>
+                    <aside class="notes">
+                        100 zerbitzari baino gehiago ditugu, guztien konfigurazioak kudeatu behar dira:
+                        firewallak, sistemaren eguneraketak, ssh gakoak aldatzea, ...
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Eta zer dago hortik zehar?</h2>
+                    <ul>
+                        <li><a href="https://youtube.com">YouTube</a></li>
+                        <li><a href="https://instagram.com">Instagram</a> (django instalazio handiena)</li>
+                        <li><a href="http://bittorrent.com">Bittorrent</a></li>
+                        <li><a href="http://dropbox.com">Dropbox</a></li>
+                    </ul>
+                    <aside class="notes">
+                        Eta hori batzuk aipatzearren.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Ingurune zientifikoan</h2>
+                    <ul>
+                        <li><a href="http://numpy.scipy.org/">Numpy</a> / <a href="http://scipy.org/">Scipy</a></li>
+                        <li><a href="http://pandas.pydata.org/">Pandas</a></li>
+                        <li><a href="http://matplotlib.sourceforge.net/">Matplotlib</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Kodi</h2>
+                    <ul>
+                        <li>Media Center bat</li>
+                        <li>Pluginak python-en idatzita</li>
+                        <li>Adibidez: ETBren APIa</li>
+                    </ul>
+                    <aside class="notes">
+                        Gure disko gogor baten ditugun pelikula, musika, serie eta abarrak era erraz
+                        baten ordenatzeko tresna, azpitituluak, karatulak, ...
+
+                        Pluginekin hainbat gauza egin daitezke: pelikulak, zuzeneko ekitaldiak, futbola, ...
+
+                        Pluginak python-en idatzita daude.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>... eta beste hainbat aplikazio</h2>
+                    <a href="http://docs.python-guide.org/en/latest/#scenario-guide-for-python-applications">Zerrenda txiki bat hemen...s</a>
+                    <a href="https://www.python.org/about/success">Erabilpen kasu ugari</a>
+                </section>
+
+                <section>
+                    <h2>Laburbilduz...</h2>
+                    <ul>
+                        <li>Lengoaia erraza</li>
+                        <li>Lengoaia ahaltsua</li>
+                        <li>Liburutegi ugari</li>
+                        <li>Aplikazio asko</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Galderarik?</h1>
+                        <img class="" data-src="../img/life-of-brian-stoning.jpg" alt="" />
+                    </section>
+                </section>
 
                 <section>
                     <h1>Eskerrik asko!</h1>
